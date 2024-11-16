@@ -1,0 +1,154 @@
+.dealDataContainer {
+  width: 100%;
+  max-height: 400px;
+  display: flex;
+  gap: 20px;
+  padding: 1.875rem;
+}
+
+.dealProductImageContainer {
+  width: 50%;
+  height: 100%;
+}
+
+/* right side */
+.hotAndDiscountContainer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.productDiscount,
+.productHot,
+.soldOut {
+  display: flex;
+  justify-content: center;
+  width: 60px;
+  padding: 5px 5px;
+  font-size: 0.7rem;
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 0 5px 5px 5px;
+  text-wrap: nowrap;
+}
+
+.productHot {
+  width: 50px;
+  background-color: var(--primary-color);
+}
+
+.soldOut {
+  width: 80px;
+  background-color: var(--text-color);
+}
+
+.cartInfoContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.productName {
+  font-size: var(--banner-subtitle-desktop);
+  font-weight: 500;
+  color: var(--text-color);
+  text-transform: capitalize;
+  transition: all 0.3s;
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.productTitle {
+  font-size: var(--banner-button-text-desktop);
+  line-height: 26px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  color: var(--text-color);
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.productsPriceContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.productsCurrentPrice {
+  font-size: var(--cart-currentPrice-desktop);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.productsOldPrice {
+  font-size: var(--cart-OldPrice-desktop);
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
+.productInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: var(--banner-subtitle-desktop);
+}
+
+.productInfoName {
+  font-weight: 500;
+}
+
+.btnAddToCart {
+  width: 200px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .dealDataContainer {
+    max-height: none;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .dealProductImageContainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* right side */
+  .cartInfoContainer {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .productName {
+    font-size: var(--banner-subtitle-mobile);
+  }
+
+  .productTitle {
+    font-size: var(--banner-button-text-mobile);
+    line-height: 26px;
+  }
+
+  .productInfo {
+    font-size: var(--banner-description-mobile);
+  }
+
+  .btnAddToCart {
+    width: 100%;
+  }
+}

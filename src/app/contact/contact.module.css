@@ -1,0 +1,141 @@
+.allDataContainer {
+  max-width: 1600px;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 2.2rem;
+  margin: 4rem auto 5rem auto;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+}
+
+.subTitle {
+  margin: 10px 0 20px 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.phoneNum {
+  font-weight: 700;
+}
+
+.inputFieldContainer {
+  padding-right: 30px;
+}
+
+.nameAadEmailContainer {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.inputField,
+.textareaField {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  border-radius: 5px;
+  border: 1px solid #ebebeb;
+  outline: none;
+  transition: all 0.3s;
+  margin-top: 1.2rem;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #f4f4f4;
+}
+
+.inputField:focus {
+  border: 1px solid #0068c8;
+}
+
+.textareaField {
+  height: 15rem;
+}
+
+.textareaField:focus {
+  border: 1px solid #0068c8;
+}
+
+@media screen and (max-width: 800px) {
+  .allDataContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 15px;
+  }
+
+  .inputFieldContainer {
+    padding-right: 0;
+  }
+
+  .nameAadEmailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .inputField,
+  .textareaField {
+    width: 100%;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 1000px) {
+  .allDataContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .inputFieldContainer {
+    padding-right: 0;
+  }
+
+  .nameAadEmailContainer {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .inputField,
+  .textareaField {
+    width: 100%;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1550px) {
+  .allDataContainer {
+    grid-template-columns: 45%, 55%;
+    gap: 2rem;
+  }
+
+  .nameAadEmailContainer {
+    display: flex;
+    gap: 1.25rem;
+  }
+
+  .inputField,
+  .textareaField {
+    width: 100%;
+    padding: 1rem 1.25rem;
+  }
+}
