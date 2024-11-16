@@ -1,0 +1,127 @@
+.newsletterAllDataContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.newsletterBgImage {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+  background-position: cover;
+}
+
+.newsletterDataContainer {
+  width: 80%;
+  max-width: 1700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 50px 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.newsletterInfoText {
+  font-size: var(--banner-title-desktop);
+  line-height: 55px;
+  color: var(--text-color);
+}
+
+.inputFieldContainer {
+  display: flex;
+  width: 70%;
+}
+
+.emailField {
+  width: 80%;
+  height: 50px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 150px 0 20px;
+  border: 1px solid var(--accent-color);
+}
+
+.subscribeBtn {
+  width: 20%;
+  background-color: var(--accent-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  margin-left: -10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.inputFieldContainer:hover .emailField {
+  border: 1px solid var(--text-color);
+}
+
+.inputFieldContainer:hover .subscribeBtn {
+  background-color: var(--text-color);
+}
+
+/* --------------- */
+@media only screen and (max-width: 1000px) {
+  .newsletterDataContainer {
+    width: 94%;
+    padding: 20px;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .newsletterInfoText {
+    font-size: var(--banner-title-mobile);
+    line-height: 32px;
+  }
+
+  .inputFieldContainer {
+    width: 100%;
+  }
+
+  .emailField {
+    width: 80%;
+    height: 45px;
+    padding: 20px;
+    outline: none;
+  }
+
+  .subscribeBtn {
+    width: 30%;
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1700px) {
+  .newsletterDataContainer {
+    width: 94%;
+    padding: 30px;
+    gap: 40px;
+  }
+
+  .newsletterInfoText {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .inputFieldContainer {
+    display: flex;
+    width: 70%;
+  }
+
+  .emailField {
+    width: 80%;
+    height: 50px;
+    padding: 0 150px 0 20px;
+  }
+
+  .subscribeBtn {
+    width: 20%;
+  }
+}

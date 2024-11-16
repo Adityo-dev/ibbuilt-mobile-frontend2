@@ -1,0 +1,173 @@
+.cartDataContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartImageContainer {
+  max-width: 250px;
+  max-height: 220px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 0.625rem;
+  padding: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.cartImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  text-align: start;
+  padding: 0 3px;
+}
+
+.description {
+  font-size: var(--cart-description-desktop);
+  line-height: 1.3;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  color: var(--text-color);
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.priceAndAddToCartContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: var(--cart-currentPrice-desktop);
+}
+
+.currentPrice {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.oldPrice {
+  font-size: var(--cart-OldPrice-desktop);
+  opacity: 0.7;
+}
+
+.addToCartBtn {
+  width: 2.25rem;
+  height: 2.25rem;
+  font-size: 100%;
+  padding: 0.35rem;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--border-color);
+  }
+}
+
+.cartButtonContainer {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+  opacity: 1;
+  transition: all 0.3s;
+  display: none;
+}
+
+.cartDataContainer:hover .cartButtonContainer {
+  opacity: 1;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .cartInfoContainer {
+    gap: 0.6rem;
+    text-align: start;
+  }
+
+  .description {
+    font-size: var(--cart-description-mobile);
+  }
+
+  .price {
+    gap: 0.5rem;
+  }
+
+  .currentPrice {
+    font-size: var(--cart-currentPrice-mobile);
+  }
+
+  .oldPrice {
+    font-size: var(--cart-OldPrice-mobile);
+  }
+
+  .addToCartBtn {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .description {
+    font-size: var(--cart-description-tablet);
+  }
+
+  .price {
+    gap: 0.5rem;
+  }
+
+  .currentPrice {
+    font-size: var(--cart-currentPrice-tablet);
+  }
+
+  .oldPrice {
+    font-size: var(--cart-oldPrice-tablet);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+  .description {
+    font-size: var(--cart-description-laptop);
+  }
+
+  .price {
+    gap: 0.5rem;
+  }
+
+  .currentPrice {
+    font-size: var(--cart-currentPrice-laptop);
+  }
+
+  .oldPrice {
+    font-size: var(--cart-oldPrice-laptop);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .cartButtonContainer {
+    display: block;
+  }
+}

@@ -1,0 +1,52 @@
+.timerContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.timerInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.time {
+  width: 5rem;
+  height: 100%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+}
+
+.text {
+  color: var(--text-color);
+  text-transform: capitalize;
+}
+
+.timeIsUp {
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+  .timerContainer {
+    gap: 1rem;
+  }
+
+  .time {
+    width: 3.5rem;
+    height: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+}
