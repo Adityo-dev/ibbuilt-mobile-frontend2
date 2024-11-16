@@ -1,0 +1,150 @@
+.rowCartDataContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.625rem;
+}
+
+.imageContainer {
+  max-width: 200px;
+  max-height: 180px;
+  width: 100%;
+  height: 100%;
+  border-right: 1px solid var(--border-color);
+  padding: 1rem;
+}
+
+.cartImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cartInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  text-align: start;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.description {
+  font-size: 0.875rem;
+  line-height: 1.3;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s;
+  color: var(--text-color);
+  &:hover {
+    color: var(--primary-color);
+  }
+}
+
+.priceAndAddToCartContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.currentPrice {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.oldPrice {
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.stockContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  text-wrap: nowrap;
+}
+
+.stockOut {
+  color: var(--primary-color);
+}
+
+.addToCartBtn {
+  width: 100%;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: none;
+  padding: 10px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #fff;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rowCartDataContainer {
+    gap: 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .imageContainer {
+    width: 40%;
+    height: 100%;
+    border-right: 1px solid var(--border-color);
+    padding: 0.5rem;
+  }
+
+  .cartImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .cartInfoContainer {
+    width: 60%;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .priceAndAddToCartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .currentPrice {
+    font-size: 1rem;
+  }
+
+  .oldPrice {
+    font-size: 0.9rem;
+  }
+
+  .addToCartBtn {
+    font-size: 0.9rem;
+    padding: 9px 0;
+  }
+}

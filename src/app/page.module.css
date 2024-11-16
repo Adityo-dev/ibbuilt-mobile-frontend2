@@ -1,0 +1,58 @@
+.homePageMainContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* service And Banner Container */
+.serviceAndBannerContainer {
+  max-width: 1700px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+
+.serviceComponents {
+  grid-column: 1/2;
+  display: block;
+}
+
+.bannerComponents {
+  grid-column: 2/-1;
+}
+
+.serviceTypeMobile {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .homePageMainContainer {
+    gap: 2rem;
+  }
+
+  .serviceAndBannerContainer {
+    padding: 0 0.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .serviceTypeMobile {
+    max-width: 1700px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 0.9rem;
+    display: block;
+  }
+
+  .serviceComponents,
+  .mobileNone {
+    display: none;
+  }
+}

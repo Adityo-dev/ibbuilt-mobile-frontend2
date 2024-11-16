@@ -1,0 +1,34 @@
+.button {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border: none;
+  padding: 12px 43px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-wrap: nowrap;
+}
+
+/* @media screen and (max-width: 769px) {
+  .buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .button {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    cursor: pointer;
+    background-color: #ef233c;
+    color: #fff;
+  }
+} */
